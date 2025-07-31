@@ -1,6 +1,50 @@
-import Image from "next/image";
+'use client';
+
+import { useState, useEffect } from 'react';
 
 export default function Home() {
+  const [displayText, setDisplayText] = useState('');
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+  const [currentCharIndex, setCurrentCharIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
+  
+  const fullText = [
+    "Hey there ! :)",
+    "",
+    "My name is Jonny Wise",
+    "",
+    "Welcome to my portfolio",
+    "",
+    "Feel free to learn more about me, check out some of my projects, or reach out"
+  ];
+
+  useEffect(() => {
+    if (currentLineIndex >= fullText.length) {
+      setIsTyping(false);
+      return;
+    }
+
+    const currentLine = fullText[currentLineIndex];
+    
+    if (currentCharIndex < currentLine.length) {
+      const timer = setTimeout(() => {
+        setDisplayText(prev => prev + currentLine[currentCharIndex]);
+        setCurrentCharIndex(prev => prev + 1);
+      }, 50);
+      
+      return () => clearTimeout(timer);
+    } else {
+      // Move to next line
+      const timer = setTimeout(() => {
+        setDisplayText(prev => prev + '\n');
+        setCurrentLineIndex(prev => prev + 1);
+        setCurrentCharIndex(0);
+      }, 250);
+      
+      return () => clearTimeout(timer);
+    }
+  }, [currentLineIndex, currentCharIndex, fullText]);
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
@@ -35,13 +79,13 @@ export default function Home() {
       {/* Main Content */}
       <main className="pt-32 pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center">
-            <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-6">
-              Jonny Wise
-            </h1>
-            <p className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto leading-relaxed">
-              Welcome to my portfolio. I'm passionate about creating meaningful digital experiences.
-            </p>
+          <div className="flex justify-center">
+            <div className="text-2xl md:text-4xl font-mono leading-relaxed min-h-[300px] w-full max-w-4xl">
+              <pre className="whitespace-pre-wrap text-left">
+                {displayText}
+                {isTyping && <span className="animate-pulse">|</span>}
+              </pre>
+            </div>
           </div>
         </div>
       </main>
