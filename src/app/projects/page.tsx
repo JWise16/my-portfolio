@@ -46,102 +46,132 @@ export default function Projects() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project Card 1 */}
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-3">E-Commerce Platform</h3>
+              <h3 className="text-xl font-semibold mb-3">MusicDB</h3>
               <p className="text-white/70 mb-4 leading-relaxed">
-                A full-stack e-commerce solution with user authentication, payment processing, 
-                and inventory management.
+                A comprehensive platform for venue management, event tracking, and talent discovery 
+                in the music industry. Helps independent music venues collaborate and thrive.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">React</span>
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Node.js</span>
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">MongoDB</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">TypeScript</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Supabase</span>
               </div>
-              <a href="#" className="text-white/80 hover:text-white transition-colors text-sm">
+              <a 
+                href="https://github.com/JWise16/musicdb-mvp" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors text-sm"
+              >
                 View Project →
               </a>
             </div>
 
             {/* Project Card 2 */}
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-3">Task Management App</h3>
+              <h3 className="text-xl font-semibold mb-3">Mobile App</h3>
               <p className="text-white/70 mb-4 leading-relaxed">
-                A collaborative task management application with real-time updates, 
-                team collaboration, and progress tracking.
+                A cross-platform mobile application with modern UI/UX design, 
+                real-time features, and seamless user experience.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Vue.js</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">React Native</span>
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Firebase</span>
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">TypeScript</span>
               </div>
-              <a href="#" className="text-white/80 hover:text-white transition-colors text-sm">
+              <a 
+                href="https://github.com/JWise16/realtalk-v2" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors text-sm"
+              >
                 View Project →
               </a>
             </div>
 
             {/* Project Card 3 */}
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-3">Portfolio Website</h3>
+              <h3 className="text-xl font-semibold mb-3">AI DJ</h3>
               <p className="text-white/70 mb-4 leading-relaxed">
-                A minimalist portfolio website built with modern web technologies, 
-                featuring responsive design and smooth animations.
+                An intelligent music mixing system that uses AI to create seamless transitions 
+                and personalized playlists based on user preferences.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Next.js</span>
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Tailwind CSS</span>
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">TypeScript</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Python</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">TensorFlow</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Audio Processing</span>
               </div>
-              <a href="#" className="text-white/80 hover:text-white transition-colors text-sm">
+              <a 
+                href="https://github.com/JWise16/automix_demo" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors text-sm"
+              >
                 View Project →
               </a>
             </div>
 
             {/* Project Card 4 */}
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-3">Weather Dashboard</h3>
+              <h3 className="text-xl font-semibold mb-3">Speech-to-Speech AI Assistant</h3>
               <p className="text-white/70 mb-4 leading-relaxed">
-                A weather application that displays current conditions and forecasts 
-                with interactive maps and detailed weather data.
+                An AI assistant that can engage in natural speech-to-speech conversations, 
+                providing intelligent responses through voice interaction.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">JavaScript</span>
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Weather API</span>
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Chart.js</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Python</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Speech Recognition</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Text-to-Speech</span>
               </div>
-              <a href="#" className="text-white/80 hover:text-white transition-colors text-sm">
+              <a 
+                href="https://github.com/JWise16/hello-allie" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors text-sm"
+              >
                 View Project →
               </a>
             </div>
 
             {/* Project Card 5 */}
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-3">Blog Platform</h3>
+              <h3 className="text-xl font-semibold mb-3">AI Teaching Assistant</h3>
               <p className="text-white/70 mb-4 leading-relaxed">
-                A content management system for blogs with markdown support, 
-                SEO optimization, and analytics integration.
+                An intelligent educational platform that provides personalized learning experiences, 
+                automated grading, and adaptive content delivery for students.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Python</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">OpenAI API</span>
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Django</span>
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">PostgreSQL</span>
               </div>
-              <a href="#" className="text-white/80 hover:text-white transition-colors text-sm">
+              <a 
+                href="https://github.com/JWise16/Brain_Pitch_Demo" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors text-sm"
+              >
                 View Project →
               </a>
             </div>
 
             {/* Project Card 6 */}
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-3">Mobile App</h3>
+              <h3 className="text-xl font-semibold mb-3">LLM Benchmarking</h3>
               <p className="text-white/70 mb-4 leading-relaxed">
-                A cross-platform mobile application for fitness tracking 
-                with social features and personalized recommendations.
+                A comprehensive framework for evaluating and comparing large language models, 
+                including performance metrics, accuracy testing, and efficiency analysis.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">React Native</span>
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Redux</span>
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Firebase</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Python</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Hugging Face</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">MLOps</span>
               </div>
-              <a href="#" className="text-white/80 hover:text-white transition-colors text-sm">
+              <a 
+                href="https://github.com/JWise16/pico-llm" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors text-sm"
+              >
                 View Project →
               </a>
             </div>
