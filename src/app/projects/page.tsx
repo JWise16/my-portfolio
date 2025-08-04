@@ -165,6 +165,26 @@ export default function Projects() {
                 View Project →
               </Link>
             </div>
+
+            {/* Project Card 7 */}
+            <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-all duration-300 relative">
+              <h3 className="text-xl font-semibold mb-3">WhatsApp Language Tutor</h3>
+              <p className="text-white/70 mb-4 leading-relaxed">
+                An AI-powered language learning assistant that integrates with WhatsApp to provide 
+                personalized language tutoring through conversational interactions.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-8">
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Python</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">WhatsApp API</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">OpenAI GPT</span>
+              </div>
+              <Link 
+                href="/projects/whatsapp-language-tutor" 
+                className="text-white/80 hover:text-white transition-colors text-sm absolute bottom-4 left-6 px-3 py-2"
+              >
+                View Project →
+              </Link>
+            </div>
           </div>
         </div>
       </main>
