@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Projects() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -5,26 +7,26 @@ export default function Projects() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <a href="/" className="text-xl font-semibold hover:text-white/80 transition-colors">JW</a>
+            <Link href="/" className="text-xl font-semibold hover:text-white/80 transition-colors">JW</Link>
             <div className="flex space-x-8">
-              <a 
+              <Link 
                 href="/about" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 About
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/projects" 
                 className="text-white font-medium"
               >
                 Projects
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/contact" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -38,7 +40,7 @@ export default function Projects() {
               Projects
             </h1>
             <p className="text-xl text-white/70 max-w-3xl leading-relaxed">
-              Here are some of the projects I've worked on. Each one represents a unique challenge 
+              Here are some of the projects I&apos;ve worked on. Each one represents a unique challenge 
               and learning opportunity.
             </p>
           </div>
@@ -56,12 +58,12 @@ export default function Projects() {
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">TypeScript</span>
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">PostgreSQL</span>
               </div>
-              <a 
+              <Link 
                 href="/projects/musicdb" 
                 className="text-white/80 hover:text-white transition-colors text-sm absolute bottom-4 left-6 px-3 py-2"
               >
                 View Project →
-              </a>
+              </Link>
             </div>
 
             {/* Project Card 2 */}
@@ -76,12 +78,12 @@ export default function Projects() {
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Expo Router & EAS</span>
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">TypeScript</span>
               </div>
-              <a 
+              <Link 
                 href="/projects/mobile-app" 
                 className="text-white/80 hover:text-white transition-colors text-sm absolute bottom-4 left-6 px-3 py-2"
               >
                 View Project →
-              </a>
+              </Link>
             </div>
 
             {/* Project Card 3 */}
@@ -96,12 +98,12 @@ export default function Projects() {
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">sklearn</span>
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Audio Processing</span>
               </div>
-              <a 
+              <Link 
                 href="/projects/ai-dj" 
                 className="text-white/80 hover:text-white transition-colors text-sm absolute bottom-4 left-6 px-3 py-2"
               >
                 View Project →
-              </a>
+              </Link>
             </div>
 
             {/* Project Card 4 */}
@@ -116,12 +118,12 @@ export default function Projects() {
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">OpenAI Agent SDK</span>
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">React</span>
               </div>
-              <a 
+              <Link 
                 href="/projects/speech-assistant" 
                 className="text-white/80 hover:text-white transition-colors text-sm absolute bottom-4 left-6 px-3 py-2"
               >
                 View Project →
-              </a>
+              </Link>
             </div>
 
             {/* Project Card 5 */}
@@ -136,12 +138,12 @@ export default function Projects() {
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Node</span>
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Express</span>
               </div>
-              <a 
+              <Link 
                 href="/projects/ai-teaching" 
                 className="text-white/80 hover:text-white transition-colors text-sm absolute bottom-4 left-6 px-3 py-2"
               >
                 View Project →
-              </a>
+              </Link>
             </div>
 
             {/* Project Card 6 */}
@@ -156,12 +158,12 @@ export default function Projects() {
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Hugging Face</span>
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Picobot</span>
               </div>
-              <a 
+              <Link 
                 href="/projects/llm-benchmarking" 
                 className="text-white/80 hover:text-white transition-colors text-sm absolute bottom-4 left-6 px-3 py-2"
               >
                 View Project →
-              </a>
+              </Link>
             </div>
           </div>
         </div>

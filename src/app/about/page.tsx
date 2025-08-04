@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function About() {
   const timelineEvents = [
     {
@@ -33,7 +35,7 @@ export default function About() {
     {
       year: "2023-2024",
       title: "Off-Campus Programs",
-      description: "Junior year - I did two off-campus programs: Silicon Valley program & a semester in computer science in Budapest.",
+      description: "Junior year - I did two off-campus programs: Silicon Valley program &amp; a semester in computer science in Budapest.",
       category: "Education"
     },
     {
@@ -56,7 +58,7 @@ export default function About() {
     },
     {
       year: "2025",
-      title: "Graduation & Freelance",
+      title: "Graduation &amp; Freelance",
       description: "Graduated - working on freelance portfolios.",
       category: "Career"
     }
@@ -68,26 +70,26 @@ export default function About() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <a href="/" className="text-xl font-semibold hover:text-white/80 transition-colors">JW</a>
+            <Link href="/" className="text-xl font-semibold hover:text-white/80 transition-colors">JW</Link>
             <div className="flex space-x-8">
-              <a 
+              <Link 
                 href="/about" 
                 className="text-white font-medium"
               >
                 About
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/projects" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 Projects
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/contact" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -101,8 +103,8 @@ export default function About() {
               About Me
             </h1>
             <p className="text-xl text-white/80 leading-relaxed mb-16 max-w-3xl">
-              Hi, I'm Jonny Wise. I'm passionate about creating meaningful digital experiences 
-              and solving complex problems through technology. Here's my journey so far:
+              Hi, I&apos;m Jonny Wise. I&apos;m passionate about creating meaningful digital experiences 
+              and solving complex problems through technology. Here&apos;s my journey so far:
             </p>
           </div>
 

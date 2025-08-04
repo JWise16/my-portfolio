@@ -1,22 +1,23 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+
+const fullText = [
+  "Hey there ! :)",
+  "",
+  "My name is Jonny Wise",
+  "",
+  "Welcome to my portfolio",
+  "",
+  "Feel free to learn more about me, check out some of my projects, or reach out"
+];
 
 export default function Home() {
   const [displayText, setDisplayText] = useState('');
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
-  
-  const fullText = [
-    "Hey there ! :)",
-    "",
-    "My name is Jonny Wise",
-    "",
-    "Welcome to my portfolio",
-    "",
-    "Feel free to learn more about me, check out some of my projects, or reach out"
-  ];
 
   useEffect(() => {
     if (currentLineIndex >= fullText.length) {
@@ -43,7 +44,7 @@ export default function Home() {
       
       return () => clearTimeout(timer);
     }
-  }, [currentLineIndex, currentCharIndex, fullText]);
+  }, [currentLineIndex, currentCharIndex]);
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -53,24 +54,24 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <div className="text-xl font-semibold">JW</div>
             <div className="flex space-x-8">
-              <a 
+              <Link 
                 href="/about" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 About
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/projects" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 Projects
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/contact" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>

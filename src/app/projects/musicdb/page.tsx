@@ -1,30 +1,32 @@
-export default function MusicDBProject() {
+import Link from 'next/link';
+
+export default function MusicDB() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <a href="/" className="text-xl font-semibold hover:text-white/80 transition-colors">JW</a>
+            <Link href="/" className="text-xl font-semibold hover:text-white/80 transition-colors">JW</Link>
             <div className="flex space-x-8">
-              <a 
+              <Link 
                 href="/about" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 About
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/projects" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 Projects
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/contact" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -34,12 +36,12 @@ export default function MusicDBProject() {
       <main className="pt-32 pb-16">
         <div className="max-w-4xl mx-auto px-6">
           {/* Back Button */}
-          <a 
+          <Link 
             href="/projects" 
             className="inline-flex items-center text-white/60 hover:text-white transition-colors mb-8"
           >
             ← Back to Projects
-          </a>
+          </Link>
 
           {/* Project Header */}
           <div className="mb-12">

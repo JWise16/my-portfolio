@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Contact() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -5,26 +7,26 @@ export default function Contact() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <a href="/" className="text-xl font-semibold hover:text-white/80 transition-colors">JW</a>
+            <Link href="/" className="text-xl font-semibold hover:text-white/80 transition-colors">JW</Link>
             <div className="flex space-x-8">
-              <a 
+              <Link 
                 href="/about" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 About
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/projects" 
                 className="text-white/80 hover:text-white transition-colors duration-200 font-medium"
               >
                 Projects
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/contact" 
                 className="text-white font-medium"
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -38,8 +40,8 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-xl text-white/70 max-w-3xl leading-relaxed">
-              I'm always interested in new opportunities and collaborations. 
-              Feel free to reach out if you'd like to work together or just want to say hello.
+              I&apos;m always interested in new opportunities and collaborations. 
+              Feel free to reach out if you&apos;d like to work together or just want to say hello.
             </p>
           </div>
 
@@ -83,7 +85,7 @@ export default function Contact() {
                     id="subject"
                     name="subject"
                     className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg focus:outline-none focus:border-white/40 transition-colors"
-                    placeholder="What's this about?"
+                    placeholder="What&apos;s this about?"
                   />
                 </div>
                 
@@ -149,7 +151,7 @@ export default function Contact() {
               </div>
 
               <div className="mt-12 p-6 bg-white/5 border border-white/10 rounded-lg">
-                <h3 className="text-lg font-medium mb-3">What I'm Looking For</h3>
+                <h3 className="text-lg font-medium mb-3">What I&apos;m Looking For</h3>
                 <ul className="space-y-2 text-white/70">
                   <li>• Full-stack development opportunities</li>
                   <li>• Frontend engineering roles</li>
