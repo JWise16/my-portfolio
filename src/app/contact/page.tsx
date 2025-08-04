@@ -116,43 +116,35 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-medium mb-3">Email</h3>
                   <a 
-                    href="mailto:jonny@example.com" 
+                    href="mailto:jonathanwise16@gmail.com" 
                     className="text-white/80 hover:text-white transition-colors"
                   >
-                    jonny@example.com
+                    jonathanwise16@gmail.com
                   </a>
                 </div>
                 
                 <div>
                   <h3 className="text-lg font-medium mb-3">LinkedIn</h3>
                   <a 
-                    href="https://linkedin.com/in/jonnywise" 
+                    href="https://www.linkedin.com/in/jonathanwise16/" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-white transition-colors"
                   >
-                    linkedin.com/in/jonnywise
+                    linkedin.com/in/jonathanwise16
                   </a>
                 </div>
                 
                 <div>
                   <h3 className="text-lg font-medium mb-3">GitHub</h3>
                   <a 
-                    href="https://github.com/jonnywise" 
+                    href="https://github.com/JWise16" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-white transition-colors"
                   >
-                    github.com/jonnywise
+                    github.com/JWise16
                   </a>
-                </div>
-                
-                <div>
-                  <h3 className="text-lg font-medium mb-3">Location</h3>
-                  <p className="text-white/80">
-                    Based in San Francisco, CA<br />
-                    Available for remote work
-                  </p>
                 </div>
               </div>
 
